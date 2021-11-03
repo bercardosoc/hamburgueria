@@ -66,3 +66,12 @@ img {
         width: 100px;
     }
 }
+
+@media only screen and (min-width: 1440px) {
+    .mein-section {
+        width: 75%;
+    }
+    .item-image {
+        width: 15rem;
+    }
+}

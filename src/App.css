@@ -123,3 +123,11 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     margin: 1rem;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .title {
+    background: linear-gradient(to right, black 45%, #54AF61 0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
