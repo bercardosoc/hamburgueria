@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter&display=swap');
+
+.buy-item {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    background-color:#F5F5F5 ;
+    justify-content: space-evenly;
+}
+.buy-texts {
+    margin: 25px 0;
+}
+.buy-name {
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+}
+.buy-category {
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+}
+.buy-image {
+    background-color:#E0E0E0 ;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    border-radius: 8px;
+}
+.buy-price {
+    display: none;
+}
+.item-remove {
+    border: none;
+    background-color: transparent;
+    font-family: Inter;
+    margin: 25px auto;
+    height: 24px;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+letter-spacing: 0em;
+text-align: left;
+line-height: 15px;
+color: #BDBDBD;
+}
+
+@media only screen and (min-width:767px) {
+    .buy-image {
+        margin: 0;
+        width: 50px;
+        height: 50px;
+    }
+}

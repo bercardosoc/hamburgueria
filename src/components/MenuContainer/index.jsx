@@ -1,12 +1,15 @@
+import "./index.css"
 import Product from "../Product"
 
-const MenuContainer = ({products}) => {
+const MenuContainer = ({products, handleClick}) => {
     return (
-            <div>
-                {products.map((products, index) => (
-                    <div key = {index}>{products.name}</div>
-                ))}
-            </div>
+        <div className="cardapio">
+            <ul className="items">
+            {products.map((item, index) => {
+                return <Product item={item} handleClick={handleClick} key={index}/>
+            })}
+            </ul>
+        </div>
     )
 }
 

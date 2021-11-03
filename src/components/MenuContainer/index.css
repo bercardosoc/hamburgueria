@@ -1,0 +1,15 @@
+.items {
+    list-style-type: none;
+    position: absolute;
+    top: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    margin: 0 10px;
+}
+@media only screen and (min-width:767px) {
+    .items {
+        flex-wrap: wrap;
+        max-width: 70%;
+    }
+}
