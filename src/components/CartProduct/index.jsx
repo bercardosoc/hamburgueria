@@ -1,6 +1,7 @@
 import "./index.css"
 const CartProduct = ({item, removeItem}) => {
     return (
+        <>
         <li className="buy-item">
             <div className="buy-item-image">
                 <img 
@@ -18,6 +19,7 @@ const CartProduct = ({item, removeItem}) => {
                 Remove
             </button>
         </li>
+        </>
     )
 }
 

@@ -15,8 +15,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
   flex-direction: column;
   text-align: center;
   background-color: #F5F5F5;
-  position: absolute;
-  width: 414px;
+  width: 100%;
   height: 139px;
 }
 
@@ -26,18 +25,13 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
   justify-content: space-between;
   align-items: center;
   padding: 0px 10px 0px 15px;
-
-  position: absolute;
-  width: 382px;
-  height: 60px;
-  left: 16px;
-  top: 65px;
-
   background: #FFFFFF;
-
   border: 2px solid #E0E0E0;
   box-sizing: border-box;
   border-radius: 8px;
+  width: 75%;
+  height: 50%;
+  margin: 1rem auto;
 }
 
 .search input[type=text] {
@@ -61,20 +55,18 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 .cart-section {
   display: flex;
   justify-content: center;
+  margin: 2.5rem auto;
 }
 .cart-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 550px;
+  width: 85%;
 }
 
 .cart {
   height: 65px;
-  width: 384px;
-  left: 16px;
-  top: 520px;
+  width: 100%;
   border-radius: 5px;
 
   background: #27AE60;
@@ -90,51 +82,44 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
   text-indent: 5%;
 }
 .total {
-  word-spacing: 18rem;
-  background: linear-gradient(to right, black 50%, #828282 0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
- font-family: Inter;
-  font-size: 14px;
+  font-family: Inter;
+  font-size: 13px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0em;
-  text-align: left;
+  color: #828282;
 }
 
-@media only screen and (min-width:767px) {
+@media only screen and (min-width:768px) {
   .title-search {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 80px;
     justify-content: space-between;
+    align-items: center;
   }
   .title-header{
     width: 50%;
-    position: relative;
-    top: 10%;
   }
   .search{
     width: 50%;
-    position: relative;
-    top: 10%;
     margin: 0 10%;
   }
   body {
     display: flex;
   }
-  .cart-div {
-    left: 70%;
-    top: 23.5%;
+  .cart-section {
     width: 30%;
   }
-  .cart {
-    width: 230px;
+  .cart-div {
+    width: 100%;
+    background-color: #F5F5F5;
+    margin: 1rem;
   }
-  .total {
-    word-spacing: 8rem;
+  .cart {
+    width: 13rem;
+    margin: 1rem;
   }
 }

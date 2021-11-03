@@ -1,15 +1,22 @@
 .items {
     list-style-type: none;
-    position: absolute;
-    top: 150px;
     display: flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    margin: 0 10px;
+    margin: 0 1rem;
+    white-space: nowrap;
+    overflow-x: scroll;
 }
-@media only screen and (min-width:767px) {
+.item {
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    margin: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+@media only screen and (min-width: 768px) {
     .items {
         flex-wrap: wrap;
-        max-width: 70%;
+    }
+    .mein-section {
+        display: flex;
+        margin: 0 auto;
     }
 }

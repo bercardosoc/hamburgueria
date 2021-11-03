@@ -4,73 +4,65 @@ img {
     height: 150px;
     width: 150px;
 }
-.item {
-border-radius: 5px;
-border: 1px solid #E0E0E0;
-width: 300px;
-height: 346px;
-margin: 10px;
-font-family: 'Inter', sans-serif;
-}
 .item-image {
     background-color: #F5F5F5;
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
+    width: 12rem;
 }
 .item-name {
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 .item-category {
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px;
-letter-spacing: 0em;
-text-align: left;
-color: #828282;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #828282;
 }
 .item-price {
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-color: #27AE60;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #27AE60;
 }
 
 .item-buy {
-height: 40px;
-width: 106px;
-left: 20px;
-top: 133px;
-border-radius: 8px;
-background: #27AE60;
+    height: 40px;
+    width: 106px;
+    left: 20px;
+    top: 133px;
+    border-radius: 8px;
+    background: #27AE60;
 
-color: white;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: 17px;
-letter-spacing: 0em;
-text-align: center;
-border: none;
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: none;
 }
 
 .item-name, .item-category, .item-price, .item-buy {
     margin: 5px 10px;
 }
 
-@media only screen and (min-width:767px) {
-    .item {
-        max-width: 28%;
-        height: auto;
+@media only screen and (min-width:768px) {
+    img {
+        height: 100px;
+        width: 100px;
     }
 }

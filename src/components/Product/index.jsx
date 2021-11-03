@@ -2,7 +2,7 @@ import "./index.css"
 
 const Product = ({ item, handleClick }) => {
     return (
-        <li className="item">
+        <>
             <div className="item-image">
             <img src={item.img}/>
             </div>
@@ -14,7 +14,7 @@ const Product = ({ item, handleClick }) => {
                 onClick={() => handleClick(item.id)}>
                 Comprar
             </button>
-        </li>
+            </>
     )
 }
 
