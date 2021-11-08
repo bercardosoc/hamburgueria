@@ -14,6 +14,7 @@
 @media only screen and (min-width: 768px) {
     .items {
         flex-wrap: wrap;
+        overflow-x: hidden;
     }
     .mein-section {
         display: flex;
