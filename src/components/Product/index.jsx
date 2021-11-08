@@ -8,7 +8,7 @@ const Product = ({ item, handleClick }) => {
             </div>
             <p className="item-name">{item.name}</p>
             <p className="item-category">{item.category}</p>
-            <p className="item-price">{item.price}</p>
+            <p className="item-price">R$ {item.price.toFixed(2)}</p>
             <button 
                 className="item-buy"
                 onClick={() => handleClick(item.id)}>

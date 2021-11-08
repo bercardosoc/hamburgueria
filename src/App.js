@@ -55,7 +55,7 @@ function App() {
 
   const showProducts = (productName) => {
     const filtered = products.filter((item) => {
-      return item.name === productName;
+      return item.name.toLowerCase() === productName.toLowerCase();
     });
     setFilteredProducts(filtered);
   };
@@ -76,7 +76,6 @@ function App() {
 
   const total = currentSale
     .reduce((accumulator, item) => item.price + accumulator, 0)
-    .toFixed(2);
 
   return (
     <>
@@ -99,7 +98,7 @@ function App() {
           </button>
         </div>
       </header>
-      <body>
+      <section className="body">
       <section className="mein-section">
         {filteredProducts.length > 0 ? (
           <MenuContainer
@@ -117,7 +116,7 @@ function App() {
             <h3 className="total">Total: {total}</h3>
         </div>
       </section>
-      </body>
+      </section>
     </>
   );
 }
