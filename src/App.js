@@ -106,7 +106,9 @@ function App() {
             handleClick={handleClick}
           />
         ) : (
-          <MenuContainer products={products} handleClick={handleClick} />
+          <MenuContainer 
+          products={products} 
+          handleClick={handleClick} />
         )}
       </section>
       <section className="cart-section">

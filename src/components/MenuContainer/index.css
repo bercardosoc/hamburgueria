@@ -8,13 +8,14 @@
 .item {
     border-radius: 5px;
     border: 1px solid #E0E0E0;
-    margin: 1rem;
+    margin: 0.5rem;
     font-family: 'Inter', sans-serif;
 }
 @media only screen and (min-width: 768px) {
     .items {
         flex-wrap: wrap;
         overflow-x: hidden;
+        justify-content: center;
     }
     .mein-section {
         display: flex;
