@@ -115,7 +115,14 @@ function App() {
         <div className="cart-div">
           <h2 className="cart">Carrinho de compras</h2>
           <CartContainer products={currentSale} removeItem={removeItem} />
-            <h3 className="total">Total: {total}</h3>
+            {currentSale.length > 0 ? (
+              <h3 className="total">Total: R${total}</h3>
+              ) : ( 
+                <div className="cart-div-end">
+                  <h1 className="cart-title">Sua sacola está vazia</h1> 
+                  <p className="cart-description">Adicione items</p>
+                </div>
+                )}
         </div>
       </section>
       </section>
