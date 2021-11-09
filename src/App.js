@@ -76,6 +76,7 @@ function App() {
 
   const total = currentSale
     .reduce((accumulator, item) => item.price + accumulator, 0)
+    .toFixed(2)
 
   return (
     <>
